@@ -1,9 +1,6 @@
 #!/bin/bash
-# Guia de compilação do OpenMC criado por Jefferson Quintão Campos Duarte
+# Guia de compilação do OpenMC criado por Jefferson Quintão Campos Duarte e Thalles Oliveira Campagnani
 
-##########
-# DEBIAN #
-##########
 
 #Passos:
 
@@ -16,7 +13,7 @@ sudo apt upgrade -y
 sudo apt install --reinstall openssh-server openmpi-bin libopenmpi-dev build-essential cmake libpng-dev libhdf5-dev python3-pip python3-dev python-is-python3 git -y
 
 # Instalando dependências Arch
-#sudo pacman -Syu openssh base-devel cmake libpng hdf5 fmt openmpi pugixml git fmt python python-pip
+#sudo pacman -Syu openssh base-devel cmake libpng hdf5 fmt openmpi pugixml git python python-pip
 
 # Compilando e instalando o OpenMC
 git clone --recurse-submodules https://github.com/openmc-dev/openmc.git
